@@ -4,7 +4,7 @@ function Footer() {
     let data = new Date().getFullYear()
   return (
     <>
-    <div className="flex justify-center bg-blue-100 text-blue-600">
+    <div className="flex justify-center bg-blue-100 text-blue-600 mt-20">
         <div className="container flex flex-col items-center py-4">
             <p className='text-xl font-medium mt-4'>
                 Blog Pessoal Generation | Copyright: {data}
