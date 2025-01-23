@@ -1,3 +1,6 @@
+import ListaPostagens from "../../componentes/postagens/listapostagens/ListaPostagens"
+import ModalPostagem from "../../componentes/postagens/modalpostagem/ModalPostagem"
+
 function Home() {
     return (
         <>
@@ -6,6 +9,7 @@ function Home() {
                     <div className="max-w-7xl flex flex-col items-center ">
                         <p className="text-blue-400 font-sans font-medium m-4">
                             Encontre desenvolvedores que compartilham o que sabem</p>
+                            
                     </div>
 
                     <div className="max-w-7xl flex flex-col items-center  ">
@@ -14,16 +18,17 @@ function Home() {
                             alt="Imagem da Página Home"
                             width="1200px"
                         />
-                        <div className="flex justify-around gap-4">
-                            <div className='rounded text-white 
-                                            border-white border-solid border-2 py-2 px-4'
+                        <div className="flex justify-around gap-4 mt-8">
+                            <div className='rounded-lg font-semibold text-lg text-white bg-red-400
+                                            border-white border-solid border-2 '
                                 >
-                                Nova Postagem
+                                <ModalPostagem/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <ListaPostagens/>
         </>
     )
 }
