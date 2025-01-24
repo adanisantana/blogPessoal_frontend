@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import Postagem from "../../../models/Postagem"
-import {buscar,deletar} from  "../../../services/Service"
+import {buscar, deletar} from  "../../../services/Service"
 import { AuthContext } from "../../../contexts/AuthContext"
 import { RotatingLines } from "react-loader-spinner"
 
@@ -68,6 +68,7 @@ function DeletarPostagem(){
         retornar()
 
     }
+}
 
     function retornar(){
         navigate("/postagens")
@@ -115,7 +116,6 @@ function DeletarPostagem(){
             </div>
         </div>
     )
-}
 }
 
 export default DeletarPostagem
