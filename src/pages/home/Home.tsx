@@ -14,6 +14,13 @@ function Home() {
                             alt="Imagem da Página Home"
                             width="1200px"
                         />
+                        <div className="flex justify-around gap-4">
+                            <div className='rounded text-white 
+                                            border-white border-solid border-2 py-2 px-4'
+                                >
+                                Nova Postagem
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
